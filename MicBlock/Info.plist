@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <!-- App displays in menu bar only, no dock icon -->
+    <key>LSUIElement</key>
+    <true/>
+
+    <!-- App name -->
+    <key>CFBundleName</key>
+    <string>MicBlock</string>
+
+    <!-- Display name (shown in Finder) -->
+    <key>CFBundleDisplayName</key>
+    <string>MicBlock</string>
+
+    <!-- Bundle identifier -->
+    <key>CFBundleIdentifier</key>
+    <string>com.micblock.app</string>
+
+    <!-- Version -->
+    <key>CFBundleShortVersionString</key>
+    <string>1.0.0</string>
+    <key>CFBundleVersion</key>
+    <string>1</string>
+
+    <!-- Required macOS version -->
+    <key>LSMinimumSystemVersion</key>
+    <string>13.0</string>
+
+    <!-- App category -->
+    <key>LSApplicationCategoryType</key>
+    <string>public.app-category.utilities</string>
+
+    <!-- Copyright -->
+    <key>NSHumanReadableCopyright</key>
+    <string>Copyright © 2025. All rights reserved.</string>
+
+    <!-- Microphone usage description (required by Apple) -->
+    <key>NSMicrophoneUsageDescription</key>
+    <string>MicBlock monitors microphone usage to show when your mic is active and allows you to block it.</string>
+
+    <!-- Executable name -->
+    <key>CFBundleExecutable</key>
+    <string>$(EXECUTABLE_NAME)</string>
+
+    <!-- Icon file -->
+    <key>CFBundleIconFile</key>
+    <string></string>
+
+    <key>CFBundleIconName</key>
+    <string>AppIcon</string>
+
+    <!-- Package type -->
+    <key>CFBundlePackageType</key>
+    <string>APPL</string>
+
+    <!-- Info dictionary version -->
+    <key>CFBundleInfoDictionaryVersion</key>
+    <string>6.0</string>
+
+    <!-- Supports high resolution -->
+    <key>NSHighResolutionCapable</key>
+    <true/>
+
+    <!-- Supports secure state restoration -->
+    <key>NSSupportsAutomaticTermination</key>
+    <true/>
+
+    <key>NSSupportsSuddenTermination</key>
+    <true/>
+</dict>
+</plist>

@@ -1,0 +1,38 @@
+name: MicBlock
+options:
+  bundleIdPrefix: com.micblock
+  deploymentTarget:
+    macOS: "13.0"
+  xcodeVersion: "15.0"
+
+packages:
+  SimplyCoreAudio:
+    url: https://github.com/rnine/SimplyCoreAudio
+    from: "4.1.0"
+
+targets:
+  MicBlock:
+    type: application
+    platform: macOS
+    sources:
+      - MicBlock
+    settings:
+      base:
+        INFOPLIST_FILE: MicBlock/Info.plist
+        CODE_SIGN_ENTITLEMENTS: MicBlock/MicBlock.entitlements
+        PRODUCT_BUNDLE_IDENTIFIER: com.micblock.app
+        MARKETING_VERSION: "1.0"
+        CURRENT_PROJECT_VERSION: "1"
+        SWIFT_VERSION: "5.9"
+        MACOSX_DEPLOYMENT_TARGET: "13.0"
+        # Menu bar only, no dock icon
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        GENERATE_INFOPLIST_FILE: NO
+        ENABLE_HARDENED_RUNTIME: YES
+        # Development signing (for local testing)
+        CODE_SIGN_STYLE: Automatic
+        DEVELOPMENT_TEAM: ""
+    dependencies:
+      - package: SimplyCoreAudio
+    entitlements:
+      path: MicBlock/MicBlock.entitlements
