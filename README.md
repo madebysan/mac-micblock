@@ -52,7 +52,7 @@ For defense in depth, use MicBlock alongside macOS's built-in per-app microphone
 
 1. Download and install [BlackHole 2ch](https://existential.audio/blackhole/)
 2. Restart your Mac after installing BlackHole
-3. Download **MicBlock.dmg** from the [latest release](https://github.com/madebysan/micblock/releases/latest)
+3. Download **MicBlock.dmg** from the [latest release](https://github.com/madebysan/mac-micblock/releases/latest)
 4. Open the DMG and drag MicBlock to your Applications folder
 5. Launch MicBlock — it will appear in your menu bar
 
@@ -72,7 +72,7 @@ The app is signed and notarized by Apple.
 Requires Xcode 15 or later.
 
 ```bash
-git clone https://github.com/madebysan/micblock.git
+git clone https://github.com/madebysan/mac-micblock.git
 cd micblock
 xcodebuild -project MicBlock.xcodeproj -scheme MicBlock -configuration Release
 # The app will be in build/Release/MicBlock.app
