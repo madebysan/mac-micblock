@@ -11,7 +11,7 @@ enum MicState {
 
 // Manages all the app state and coordinates with the audio system
 @MainActor
-class MicBlockViewModel: ObservableObject {
+class HushViewModel: ObservableObject {
     // The current state determines the icon color
     @Published private(set) var state: MicState = .available
 
@@ -122,7 +122,7 @@ class MicBlockViewModel: ObservableObject {
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
             let alert = NSAlert()
             alert.messageText = "BlackHole Audio Driver Required"
-            alert.informativeText = "MicBlock needs BlackHole (a free virtual audio driver) to block your microphone.\n\nDownload BlackHole 2ch from the website, install it, then restart your Mac."
+            alert.informativeText = "Hush needs BlackHole (a free virtual audio driver) to block your microphone.\n\nDownload BlackHole 2ch from the website, install it, then restart your Mac."
             alert.alertStyle = .informational
             alert.addButton(withTitle: "Open Download Page")
             alert.addButton(withTitle: "Later")

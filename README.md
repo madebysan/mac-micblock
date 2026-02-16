@@ -1,28 +1,28 @@
-# MicBlock
+# Hush
 
 A macOS menu bar app that disconnects your real microphone system-wide by swapping it with a silent virtual device.
 
 ## What it does
 
-MicBlock gives you a one-click kill switch for your microphone, right in your menu bar:
+Hush gives you a one-click kill switch for your microphone, right in your menu bar:
 
 - **Grey mic icon** — Microphone available (not in use)
 - **Green mic icon** — Microphone is actively in use by an app
 - **Red mic icon** — Microphone is disconnected (apps receive silence)
 
-Click the icon to toggle. MicBlock remembers your preference across restarts.
+Click the icon to toggle. Hush remembers your preference across restarts.
 
 ## How it works
 
-MicBlock uses [BlackHole](https://existential.audio/blackhole/), a free open-source virtual audio driver, as a decoy input device. When you activate blocking:
+Hush uses [BlackHole](https://existential.audio/blackhole/), a free open-source virtual audio driver, as a decoy input device. When you activate blocking:
 
-1. MicBlock saves which microphone you're currently using
+1. Hush saves which microphone you're currently using
 2. It replaces your macOS default input device with BlackHole — a null audio device that can only ever produce silence
 3. Apps recording from the default input are now connected to a device that has no microphone hardware at all
 
-When you deactivate, MicBlock switches back to your real microphone.
+When you deactivate, Hush switches back to your real microphone.
 
-**This is stronger than muting.** A muted mic is still your active input device — it could be unmuted by a bug, an app, or the OS. MicBlock removes your real mic from the equation entirely. Apps aren't talking to a silenced microphone — they're talking to a virtual device that has no audio to give. There's nothing to unmute.
+**This is stronger than muting.** A muted mic is still your active input device — it could be unmuted by a bug, an app, or the OS. Hush removes your real mic from the equation entirely. Apps aren't talking to a silenced microphone — they're talking to a virtual device that has no audio to give. There's nothing to unmute.
 
 ## What this is good for
 
@@ -34,14 +34,14 @@ When you deactivate, MicBlock switches back to your real microphone.
 
 ## Limitations
 
-MicBlock is a **practical privacy tool, not a security tool**. It's worth understanding the boundaries:
+Hush is a **practical privacy tool, not a security tool**. It's worth understanding the boundaries:
 
 - **Apps can select a specific device.** Any app that explicitly targets a particular audio device (rather than using the system default) will still reach your real microphone. Most apps use the default, but some audio-focused apps don't.
-- **It doesn't revoke permissions.** macOS per-app microphone permissions (System Settings > Privacy & Security > Microphone) are enforced at the kernel level and are stronger. MicBlock operates in userspace and doesn't change these permissions.
+- **It doesn't revoke permissions.** macOS per-app microphone permissions (System Settings > Privacy & Security > Microphone) are enforced at the kernel level and are stronger. Hush operates in userspace and doesn't change these permissions.
 - **Already-recording apps may not be affected.** If an app opened a specific device before you activated blocking, it may continue recording from that device.
 - **It won't stop kernel-level threats.** If your system is compromised at the driver or kernel level, no userspace app can protect you.
 
-For defense in depth, use MicBlock alongside macOS's built-in per-app microphone permissions. They complement each other — MicBlock for quick daily control, system permissions for hard enforcement.
+For defense in depth, use Hush alongside macOS's built-in per-app microphone permissions. They complement each other — Hush for quick daily control, system permissions for hard enforcement.
 
 ## Requirements
 
@@ -52,9 +52,9 @@ For defense in depth, use MicBlock alongside macOS's built-in per-app microphone
 
 1. Download and install [BlackHole 2ch](https://existential.audio/blackhole/)
 2. Restart your Mac after installing BlackHole
-3. Download **MicBlock.dmg** from the [latest release](https://github.com/madebysan/mac-micblock/releases/latest)
-4. Open the DMG and drag MicBlock to your Applications folder
-5. Launch MicBlock — it will appear in your menu bar
+3. Download **Hush.dmg** from the [latest release](https://github.com/madebysan/hush/releases/latest)
+4. Open the DMG and drag Hush to your Applications folder
+5. Launch Hush — it will appear in your menu bar
 
 The app is signed and notarized by Apple.
 
@@ -72,15 +72,15 @@ The app is signed and notarized by Apple.
 Requires Xcode 15 or later.
 
 ```bash
-git clone https://github.com/madebysan/mac-micblock.git
-cd micblock
-xcodebuild -project MicBlock.xcodeproj -scheme MicBlock -configuration Release
-# The app will be in build/Release/MicBlock.app
+git clone https://github.com/madebysan/hush.git
+cd hush
+xcodebuild -project Hush.xcodeproj -scheme Hush -configuration Release
+# The app will be in build/Release/Hush.app
 ```
 
 ## Privacy
 
-MicBlock runs entirely on your Mac. No data collection, no network connections, no telemetry. The app only:
+Hush runs entirely on your Mac. No data collection, no network connections, no telemetry. The app only:
 
 - Monitors which audio input device is active
 - Detects when your microphone is in use (via CoreAudio)

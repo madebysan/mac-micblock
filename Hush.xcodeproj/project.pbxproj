@@ -8,20 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		02511BD9D60C1B45C0DFC0FD /* AudioDeviceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E90733CA791F22197950ED0 /* AudioDeviceManager.swift */; };
-		1253CF085035CE4037206E6C /* MicBlockViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90836C5FBC22BAEE5F4773F /* MicBlockViewModel.swift */; };
+		1253CF085035CE4037206E6C /* HushViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90836C5FBC22BAEE5F4773F /* HushViewModel.swift */; };
 		1E943A5475C32C55609697A2 /* SimplyCoreAudio in Frameworks */ = {isa = PBXBuildFile; productRef = 43E3AFA5157BDC841648D6DC /* SimplyCoreAudio */; };
-		2E06B81FD0C258B513C999D6 /* MicBlockApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF7F81E0E14515D39FBE6D1 /* MicBlockApp.swift */; };
+		2E06B81FD0C258B513C999D6 /* HushApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF7F81E0E14515D39FBE6D1 /* HushApp.swift */; };
 		71D94F81637E6952A2B5F266 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5561839885A7D86BDCB85944 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1BCE9EE4C9DBEE1943D73CE0 /* MicBlock.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MicBlock.entitlements; sourceTree = "<group>"; };
+		1BCE9EE4C9DBEE1943D73CE0 /* Hush.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Hush.entitlements; sourceTree = "<group>"; };
 		4E90733CA791F22197950ED0 /* AudioDeviceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioDeviceManager.swift; sourceTree = "<group>"; };
 		5540D455A54456FD9BEF171F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		5561839885A7D86BDCB85944 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		5BF7F81E0E14515D39FBE6D1 /* MicBlockApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MicBlockApp.swift; sourceTree = "<group>"; };
-		A90836C5FBC22BAEE5F4773F /* MicBlockViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MicBlockViewModel.swift; sourceTree = "<group>"; };
-		B976850EE495B10B56102D2E /* MicBlock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MicBlock.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BF7F81E0E14515D39FBE6D1 /* HushApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HushApp.swift; sourceTree = "<group>"; };
+		A90836C5FBC22BAEE5F4773F /* HushViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HushViewModel.swift; sourceTree = "<group>"; };
+		B976850EE495B10B56102D2E /* Hush.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hush.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,23 +36,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A6E4BB37DED8B4A53B11FE7C /* MicBlock */ = {
+		A6E4BB37DED8B4A53B11FE7C /* Hush */ = {
 			isa = PBXGroup;
 			children = (
 				5561839885A7D86BDCB85944 /* Assets.xcassets */,
 				4E90733CA791F22197950ED0 /* AudioDeviceManager.swift */,
 				5540D455A54456FD9BEF171F /* Info.plist */,
-				1BCE9EE4C9DBEE1943D73CE0 /* MicBlock.entitlements */,
-				5BF7F81E0E14515D39FBE6D1 /* MicBlockApp.swift */,
-				A90836C5FBC22BAEE5F4773F /* MicBlockViewModel.swift */,
+				1BCE9EE4C9DBEE1943D73CE0 /* Hush.entitlements */,
+				5BF7F81E0E14515D39FBE6D1 /* HushApp.swift */,
+				A90836C5FBC22BAEE5F4773F /* HushViewModel.swift */,
 			);
-			path = MicBlock;
+			path = Hush;
 			sourceTree = "<group>";
 		};
 		B8BE6465268C5C6AD17CDA0A = {
 			isa = PBXGroup;
 			children = (
-				A6E4BB37DED8B4A53B11FE7C /* MicBlock */,
+				A6E4BB37DED8B4A53B11FE7C /* Hush */,
 				F6AE5640F74B332671BB8037 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -60,7 +60,7 @@
 		F6AE5640F74B332671BB8037 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B976850EE495B10B56102D2E /* MicBlock.app */,
+				B976850EE495B10B56102D2E /* Hush.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -68,9 +68,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		37FAFE902DE2197B33193B8F /* MicBlock */ = {
+		37FAFE902DE2197B33193B8F /* Hush */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 16D7EF902DE3A85F3A99C1E8 /* Build configuration list for PBXNativeTarget "MicBlock" */;
+			buildConfigurationList = 16D7EF902DE3A85F3A99C1E8 /* Build configuration list for PBXNativeTarget "Hush" */;
 			buildPhases = (
 				AB5BB4C106D51EDBE6C467C9 /* Sources */,
 				C3C8E79D0693DCBCA3692AA4 /* Resources */,
@@ -80,12 +80,12 @@
 			);
 			dependencies = (
 			);
-			name = MicBlock;
+			name = Hush;
 			packageProductDependencies = (
 				43E3AFA5157BDC841648D6DC /* SimplyCoreAudio */,
 			);
-			productName = MicBlock;
-			productReference = B976850EE495B10B56102D2E /* MicBlock.app */;
+			productName = Hush;
+			productReference = B976850EE495B10B56102D2E /* Hush.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -103,7 +103,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 548A68C4DD1D56F4C0440C45 /* Build configuration list for PBXProject "MicBlock" */;
+			buildConfigurationList = 548A68C4DD1D56F4C0440C45 /* Build configuration list for PBXProject "Hush" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -120,7 +120,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				37FAFE902DE2197B33193B8F /* MicBlock */,
+				37FAFE902DE2197B33193B8F /* Hush */,
 			);
 		};
 /* End PBXProject section */
@@ -142,8 +142,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				02511BD9D60C1B45C0DFC0FD /* AudioDeviceManager.swift in Sources */,
-				2E06B81FD0C258B513C999D6 /* MicBlockApp.swift in Sources */,
-				1253CF085035CE4037206E6C /* MicBlockViewModel.swift in Sources */,
+				2E06B81FD0C258B513C999D6 /* HushApp.swift in Sources */,
+				1253CF085035CE4037206E6C /* HushViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,21 +273,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = MicBlock/MicBlock.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Hush/Hush.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = NO;
-				INFOPLIST_FILE = MicBlock/Info.plist;
+				INFOPLIST_FILE = Hush/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.micblock.app;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hush.app;
 				SDKROOT = macosx;
 				SWIFT_VERSION = 5.9;
 			};
@@ -297,21 +297,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = MicBlock/MicBlock.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Hush/Hush.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = NO;
-				INFOPLIST_FILE = MicBlock/Info.plist;
+				INFOPLIST_FILE = Hush/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.micblock.app;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hush.app;
 				SDKROOT = macosx;
 				SWIFT_VERSION = 5.9;
 			};
@@ -320,7 +320,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		16D7EF902DE3A85F3A99C1E8 /* Build configuration list for PBXNativeTarget "MicBlock" */ = {
+		16D7EF902DE3A85F3A99C1E8 /* Build configuration list for PBXNativeTarget "Hush" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CC25CAE2AC88FC20223BC1D7 /* Debug */,
@@ -329,7 +329,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		548A68C4DD1D56F4C0440C45 /* Build configuration list for PBXProject "MicBlock" */ = {
+		548A68C4DD1D56F4C0440C45 /* Build configuration list for PBXProject "Hush" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0763FF7254BCDF639CB6B102 /* Debug */,

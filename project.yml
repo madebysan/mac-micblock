@@ -1,6 +1,6 @@
-name: MicBlock
+name: Hush
 options:
-  bundleIdPrefix: com.micblock
+  bundleIdPrefix: com.hush
   deploymentTarget:
     macOS: "13.0"
   xcodeVersion: "15.0"
@@ -11,16 +11,16 @@ packages:
     from: "4.1.0"
 
 targets:
-  MicBlock:
+  Hush:
     type: application
     platform: macOS
     sources:
-      - MicBlock
+      - Hush
     settings:
       base:
-        INFOPLIST_FILE: MicBlock/Info.plist
-        CODE_SIGN_ENTITLEMENTS: MicBlock/MicBlock.entitlements
-        PRODUCT_BUNDLE_IDENTIFIER: com.micblock.app
+        INFOPLIST_FILE: Hush/Info.plist
+        CODE_SIGN_ENTITLEMENTS: Hush/Hush.entitlements
+        PRODUCT_BUNDLE_IDENTIFIER: com.hush.app
         MARKETING_VERSION: "1.0"
         CURRENT_PROJECT_VERSION: "1"
         SWIFT_VERSION: "5.9"
@@ -35,4 +35,4 @@ targets:
     dependencies:
       - package: SimplyCoreAudio
     entitlements:
-      path: MicBlock/MicBlock.entitlements
+      path: Hush/Hush.entitlements

@@ -2,9 +2,9 @@ import SwiftUI
 
 // The main app entry point - uses MenuBarExtra for a menu bar-only app
 @main
-struct MicBlockApp: App {
+struct HushApp: App {
     // StateObject keeps the view model alive for the app's lifetime
-    @StateObject private var viewModel = MicBlockViewModel()
+    @StateObject private var viewModel = HushViewModel()
 
     var body: some Scene {
         // MenuBarExtra creates the menu bar icon and dropdown
@@ -24,7 +24,7 @@ struct MicBlockApp: App {
 
 // The dropdown menu that appears when you click the icon
 struct MenuBarDropdownView: View {
-    @ObservedObject var viewModel: MicBlockViewModel
+    @ObservedObject var viewModel: HushViewModel
 
     var body: some View {
         // Show current state at top
@@ -55,7 +55,7 @@ struct MenuBarDropdownView: View {
 
         Divider()
 
-        Button("Quit MicBlock") {
+        Button("Quit Hush") {
             NSApplication.shared.terminate(nil)
         }
         .keyboardShortcut("q", modifiers: [.command])

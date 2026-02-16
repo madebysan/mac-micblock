@@ -8,15 +8,15 @@
 
     <!-- App name -->
     <key>CFBundleName</key>
-    <string>MicBlock</string>
+    <string>Hush</string>
 
     <!-- Display name (shown in Finder) -->
     <key>CFBundleDisplayName</key>
-    <string>MicBlock</string>
+    <string>Hush</string>
 
     <!-- Bundle identifier -->
     <key>CFBundleIdentifier</key>
-    <string>com.micblock.app</string>
+    <string>com.hush.app</string>
 
     <!-- Version -->
     <key>CFBundleShortVersionString</key>
@@ -38,7 +38,7 @@
 
     <!-- Microphone usage description (required by Apple) -->
     <key>NSMicrophoneUsageDescription</key>
-    <string>MicBlock monitors microphone usage to show when your mic is active and allows you to block it.</string>
+    <string>Hush monitors microphone usage to show when your mic is active and allows you to block it.</string>
 
     <!-- Executable name -->
     <key>CFBundleExecutable</key>
