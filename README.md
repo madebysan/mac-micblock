@@ -8,6 +8,7 @@
 by swapping it with a silent virtual device.</p>
 
 <p align="center">macOS 13+ · Apple Silicon & Intel</p>
+<p align="center"><a href="https://github.com/madebysan/hush/releases/latest"><strong>Download Hush</strong></a></p>
 
 ## What it does
 
