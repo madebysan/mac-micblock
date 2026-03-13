@@ -99,11 +99,15 @@ Hush runs entirely on your Mac. No data collection, no network connections, no t
 
 Found a bug or have a feature idea? [Open an issue](https://github.com/madebysan/hush/issues).
 
-## License
-
-MIT License — feel free to use, modify, and distribute.
-
 ## Credits
 
 - [SimplyCoreAudio](https://github.com/rnine/SimplyCoreAudio) for audio device management
 - [BlackHole](https://existential.audio/blackhole/) virtual audio driver
+
+## License
+
+[MIT](LICENSE)
+
+---
+
+Made by [santiagoalonso.com](https://santiagoalonso.com)
